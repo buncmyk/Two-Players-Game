@@ -14,6 +14,8 @@
 		101954351E3B8DF000A8F199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101954331E3B8DF000A8F199 /* LaunchScreen.storyboard */; };
 		101954401E3B8DF000A8F199 /* Two_Players_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019543F1E3B8DF000A8F199 /* Two_Players_GameTests.swift */; };
 		1019544B1E3B8DF100A8F199 /* Two_Players_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019544A1E3B8DF100A8F199 /* Two_Players_GameUITests.swift */; };
+		101954591E3BA0C600A8F199 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101954581E3BA0C600A8F199 /* Character.swift */; };
+		1019545B1E3BBDE500A8F199 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019545A1E3BBDE500A8F199 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		101954461E3B8DF100A8F199 /* Two Players GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Two Players GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1019544A1E3B8DF100A8F199 /* Two_Players_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Two_Players_GameUITests.swift; sourceTree = "<group>"; };
 		1019544C1E3B8DF100A8F199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		101954581E3BA0C600A8F199 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		1019545A1E3BBDE500A8F199 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				101954311E3B8DF000A8F199 /* Assets.xcassets */,
 				101954331E3B8DF000A8F199 /* LaunchScreen.storyboard */,
 				101954361E3B8DF000A8F199 /* Info.plist */,
+				101954581E3BA0C600A8F199 /* Character.swift */,
+				1019545A1E3BBDE500A8F199 /* Player.swift */,
 			);
 			path = "Two Players Game";
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1019545B1E3BBDE500A8F199 /* Player.swift in Sources */,
+				101954591E3BA0C600A8F199 /* Character.swift in Sources */,
 				1019542D1E3B8DF000A8F199 /* ViewController.swift in Sources */,
 				1019542B1E3B8DF000A8F199 /* AppDelegate.swift in Sources */,
 			);
