@@ -100,6 +100,18 @@
                                     <action selector="player2AttackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvl-EV-IS6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgo-xj-ThB">
+                                <rect key="frame" x="206" y="107" width="254" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="GWH-j2-KrI"/>
+                                    <constraint firstAttribute="width" constant="254" id="Kq0-5X-ZMP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="23"/>
+                                <state key="normal" title="RESTART" backgroundImage="player1attackbtn"/>
+                                <connections>
+                                    <action selector="restartGamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KbA-x5-czW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -107,12 +119,14 @@
                             <constraint firstItem="uFr-xB-o8X" firstAttribute="top" secondItem="mts-NF-0IP" secondAttribute="bottom" constant="8" id="1sc-mB-59M"/>
                             <constraint firstItem="Ov0-7e-cvC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="25a-6T-Png"/>
                             <constraint firstItem="3tI-S4-m4W" firstAttribute="top" secondItem="J5G-D6-qMR" secondAttribute="bottom" constant="8" id="2NS-6z-RmP"/>
+                            <constraint firstItem="Hgo-xj-ThB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2zx-3X-sbx"/>
                             <constraint firstItem="klS-zi-25w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7fk-bn-15f"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3tI-S4-m4W" secondAttribute="bottom" id="7n2-GS-vke"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="15t-QW-ROW" secondAttribute="bottom" constant="8" id="8pE-kH-3uO"/>
                             <constraint firstItem="klS-zi-25w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JAA-sM-9qc"/>
                             <constraint firstItem="3tI-S4-m4W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LbT-NK-Wxg"/>
                             <constraint firstItem="Lff-A9-eY1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R0E-mE-8Iu"/>
+                            <constraint firstItem="Hgo-xj-ThB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rt6-Cr-CNw"/>
                             <constraint firstItem="J5G-D6-qMR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SST-v2-Ttd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lff-A9-eY1" secondAttribute="bottom" constant="20" id="UVJ-Ne-uQj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mts-NF-0IP" secondAttribute="trailing" constant="12" id="VCG-G3-9Rc"/>
@@ -132,6 +146,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackP1Button" destination="Ov0-7e-cvC" id="5wx-YC-T6U"/>
+                        <outlet property="attackP2Button" destination="uFr-xB-o8X" id="pKC-sl-NbS"/>
+                        <outlet property="hpPlayer1Lbl" destination="klS-zi-25w" id="ZjC-7H-tIw"/>
+                        <outlet property="hpPlayer2Lbl" destination="mts-NF-0IP" id="IOc-S6-2LS"/>
+                        <outlet property="restartButton" destination="Hgo-xj-ThB" id="vI1-I6-XgW"/>
                         <outlet property="text" destination="Lff-A9-eY1" id="Z8Q-Le-uJk"/>
                     </connections>
                 </viewController>

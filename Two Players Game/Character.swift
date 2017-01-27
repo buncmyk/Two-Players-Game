@@ -26,11 +26,11 @@ class Character{
     }
     var isAlive: Bool {
         get{
-            if (hp <= 0) {
-                return true
+            if (self._hp <= 0) {
+                return false
             }
             else{
-                return false
+                return true
             }
         }
     }
@@ -42,6 +42,7 @@ class Character{
     
     func attemptAttack(attackPwr: Int) -> Bool {
         self._hp -= attackPwr
+        if (self._hp < 0) {self._hp = 0}
         return true
     }
 }
