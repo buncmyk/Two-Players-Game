@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var text: UILabel!
+    
+    
+    
+    @IBAction func player2AttackButton(_ sender: Any) {
+    }
+    
+    @IBAction func player1AttackButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
